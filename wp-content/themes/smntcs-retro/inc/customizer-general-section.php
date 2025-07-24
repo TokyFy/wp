@@ -26,7 +26,7 @@ function smntcs_retro_theme_general_section( $wp_customize ) {
 	$wp_customize->add_setting(
 		'smntcs_retro_centre_site',
 		array(
-			'default'           => false,
+			'default'           => true,
 			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
 			'type'              => 'theme_mod',
 		)
@@ -39,12 +39,12 @@ function smntcs_retro_theme_general_section( $wp_customize ) {
 			'section' => 'smntcs_retro_theme_general_section',
 			'type'    => 'checkbox',
 		)
-	);
+	)
 
 	$wp_customize->add_setting(
 		'smntcs_retro_show_search',
 		array(
-			'default'           => false,
+			'default'           => true,
 			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
 			'type'              => 'theme_mod',
 		)
@@ -66,7 +66,8 @@ function smntcs_retro_theme_general_section( $wp_customize ) {
 			'type'              => 'theme_mod',
 			'default'           => 'nordtheme-dark',
 		)
-	);
+    );:w
+
 
 	$wp_customize->add_control(
 		'smntcs_retro_color_scheme',

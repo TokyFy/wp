@@ -39,7 +39,7 @@ function smntcs_retro_theme_general_section( $wp_customize ) {
 			'section' => 'smntcs_retro_theme_general_section',
 			'type'    => 'checkbox',
 		)
-	)
+	);
 
 	$wp_customize->add_setting(
 		'smntcs_retro_show_search',

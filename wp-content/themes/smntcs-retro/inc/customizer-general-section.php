@@ -66,7 +66,7 @@ function smntcs_retro_theme_general_section( $wp_customize ) {
 			'type'              => 'theme_mod',
 			'default'           => 'nordtheme-dark',
 		)
-    );:w
+    );
 
 
 	$wp_customize->add_control(

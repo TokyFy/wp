@@ -44,7 +44,7 @@ function smntcs_retro_theme_general_section( $wp_customize ) {
 	$wp_customize->add_setting(
 		'smntcs_retro_show_search',
 		array(
-			'default'           => true,
+			'default'           => false,
 			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
 			'type'              => 'theme_mod',
 		)

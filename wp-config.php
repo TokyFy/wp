@@ -38,7 +38,7 @@ define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 
 
-define('WP_DEFAULT_THEME', 'smntcs-retro');
+define('WP_DEFAULT_THEME', 'geex3m');
 
 /**#@+
  * Authentication unique keys and salts.

@@ -18,6 +18,7 @@
  * @package WordPress
  */
 
+define( 'DISALLOW_FILE_MODS', false);
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', getenv('DB_NAME'));

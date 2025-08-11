@@ -40,6 +40,19 @@ define( 'DB_COLLATE', '' );
 
 define('WP_DEFAULT_THEME', 'geex3m');
 
+
+// adjust Redis host and port if necessary 
+define( 'WP_REDIS_HOST', 'redis' );
+define( 'WP_REDIS_PORT', 6379 );
+
+// change the prefix and database for each site to avoid cache data collisions
+define( 'WP_REDIS_PREFIX', 'wp' );
+define( 'WP_REDIS_DATABASE', 0 ); // 0-15
+
+// reasonable connection and read+write timeouts
+define( 'WP_REDIS_TIMEOUT', 1 );
+define( 'WP_REDIS_READ_TIMEOUT', 1 );
+
 /**#@+
  * Authentication unique keys and salts.
  *

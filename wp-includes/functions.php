@@ -9208,3 +9208,7 @@ function wp_verify_fast_hash(
 	return hash_equals( $hash, wp_fast_hash( $message ) );
 }
 
+function remove_welcome_panel() {
+    remove_action('welcome_panel', 'wp_welcome_panel');
+}
+add_action('admin_init', 'remove_welcome_panel');

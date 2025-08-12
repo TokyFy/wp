@@ -27,7 +27,7 @@ define( 'DB_NAME', getenv('DB_NAME'));
 define( 'DB_USER', getenv('DB_USER'));
 
 /** Database password */
-define( 'DB_PASSWORD', trim(file_get_contents('/run/secrets/DB_PASSWORD')));
+define( 'DB_PASSWORD', [trim(file_get_contents('/run/secrets/DB_PASSWORD')));
 
 /** Database hostname */
 define( 'DB_HOST', getenv('DB_HOST'));
@@ -45,8 +45,8 @@ define('WP_DEFAULT_THEME', 'geex3m');
 // adjust Redis host and port if necessary 
 define( 'WP_REDIS_HOST', 'redis' );
 
-define('WP_REDIS_USERNAME', getenv('DB_USER'));
-define('WP_REDIS_PASSWORD', trim(file_get_contents('/run/secrets/DB_PASSWORD')));
+// define('WP_REDIS_USERNAME', getenv('DB_USER'));
+// define('WP_REDIS_PASSWORD', trim(file_get_contents('/run/secrets/DB_PASSWORD')));
 
 define( 'WP_REDIS_PORT', 6379 );
 

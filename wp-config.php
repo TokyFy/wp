@@ -45,8 +45,8 @@ define('WP_DEFAULT_THEME', 'geex3m');
 // adjust Redis host and port if necessary 
 define( 'WP_REDIS_HOST', 'redis' );
 
-define('WP_REDIS_USERNAME', 'franaivo');
-define('WP_REDIS_PASSWORD', ['franaivo', '42']);
+define('WP_REDIS_USERNAME', getenv('DB_USER'));
+define('WP_REDIS_PASSWORD', [getenv('DB_USER'),  trim(file_get_contents('/run/secrets/DB_PASSWORD')]);
 
 define( 'WP_REDIS_PORT', 6379 );
 

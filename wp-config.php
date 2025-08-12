@@ -46,7 +46,7 @@ define('WP_DEFAULT_THEME', 'geex3m');
 define( 'WP_REDIS_HOST', 'redis' );
 
 define('WP_REDIS_USERNAME', getenv('DB_USER'));
-define('WP_REDIS_PASSWORD', trim(file_get_contents('/run/secrets/DB_PASSWORD'));
+define('WP_REDIS_PASSWORD', trim(file_get_contents('/run/secrets/DB_PASSWORD')));
 
 define( 'WP_REDIS_PORT', 6379 );
 

@@ -9208,6 +9208,12 @@ function wp_verify_fast_hash(
 	return hash_equals( $hash, wp_fast_hash( $message ) );
 }
 
-if (!is_plugin_active('redis-cache/redis-cache.php')) {
-    activate_plugin('redis-cache/redis-cache.php');
+
+
+function enable_redis_cache() {
+    if (!is_plugin_active('redis-cache/redis-cache.php')) {
+        activate_plugin('redis-cache/redis-cache.php');
+    }
 }
+
+add_action( 'admin_init', 'enable_redis_cache');

@@ -23,7 +23,7 @@ define( 'DISALLOW_FILE_MODS', false);
 /** The name of the database for WordPress */
 define( 'DB_NAME', getenv('DB_NAME'));
 
-$secrets = file_get_contents('/run/secrets/my_db_password');
+$secrets = file_get_contents('/run/secrets/DB_USER');
 $lines = explode("\n", trim($secrets));
 
 $DB_USER = $lines[0] ?? null;

@@ -29,7 +29,6 @@ $lines = explode("\n", trim($secrets));
 $DB_USER = $lines[0] ?? null;
 $DB_PASS = $lines[1] ?? null;
 
-
 /** Database username */
 define( 'DB_USER', $DB_USER);
 

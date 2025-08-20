@@ -27,7 +27,7 @@ define( 'DB_NAME', getenv('DB_NAME'));
 define( 'DB_USER', getenv('DB_USER'));
 
 /** Database password */
-define( 'DB_PASSWORD', trim(file_get_contents('/run/secrets/DB_PASSWORD')));
+define( 'DB_PASSWORD', getenv('DB_PASS'));
 
 /** Database hostname */
 define( 'DB_HOST', getenv('DB_HOST'));
